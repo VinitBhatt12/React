@@ -17,7 +17,7 @@ function App() {
   //   console.log(response.data)
   // }
 
-  const [data, setdata] = useState([])
+  const [data, setdata] = useState([]) 
   const getData = async ()=>{
     const response = await axios.get('https://picsum.photos/v2/list')
     setdata(response.data)
